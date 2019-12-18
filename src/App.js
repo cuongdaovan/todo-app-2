@@ -22,6 +22,7 @@ class App extends Component {
     let todoList = this.state.todoList;
     todoList.push(this.state.todo);
     this.setState({ todoList: todoList });
+    this.setState({ todo: "" });
   };
 
   render() {
